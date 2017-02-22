@@ -10,6 +10,8 @@
 #include <SmartDashboard/SendableChooser.h>
 #include <SmartDashboard/SmartDashboard.h>
 
+#include "Subsystems/DriveTrain.h"
+
 class Robot : public frc::IterativeRobot{
 public:
 	void RobotInit() override;
@@ -22,6 +24,7 @@ public:
 	void TestPeriodic() override;
 
 	//static shared pointers of each subsystem
+	static std::shared_ptr<DriveTrain> drive_train;
 private:
 	frc::SendableChooser<frc::Command*> chooser;
 }

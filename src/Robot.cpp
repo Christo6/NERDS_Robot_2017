@@ -1,7 +1,10 @@
 #include "Robot.h"
 
+//declare shared pointers
+std::shared_ptr<DriveTrain> Robot::drive_train;
+
 void Robot::RobotInit() {
-	chooser.AddDefault("Default Auto", new ExampleCommand());
+	//chooser.AddDefault("Default Auto", new ExampleCommand());
 	// chooser.AddObject("My Auto", new MyAutoCommand());
 	frc::SmartDashboard::PutData("Auto Modes", &chooser);
 }
@@ -37,13 +40,13 @@ void Robot::AutonomousInit() {
 	}
 	else {
 		autonomousCommand.reset(new ExampleCommand());
-	} */
+	}
 
 	autonomousCommand.reset(chooser.GetSelected());
 
 	if (autonomousCommand.get() != nullptr) {
 		autonomousCommand->Start();
-	}
+	} */
 }
 
 void Robot::AutonomousPeriodic() {
@@ -55,9 +58,9 @@ void Robot::TeleopInit() {
 	// teleop starts running. If you want the autonomous to
 	// continue until interrupted by another command, remove
 	// this line or comment it out.
-	if (autonomousCommand != nullptr) {
+	/*if (autonomousCommand != nullptr) {
 		autonomousCommand->Cancel();
-	}
+	} */
 }
 
 void Robot::TeleopPeriodic() {
