@@ -19,6 +19,9 @@ constexpr int SOLENOID_DOOR = 0;
 constexpr int SOLENOID_HINGE_FORWARD = 1;
 constexpr int SOLENOID_HINGE_REVERSE = 2;
 
+//Climber port IDs
+constexpr int CLIMBER_MOTOR = 2;
+
 constexpr double DEADZONE = 0.05;
 
 #endif  // ROBOTMAP_H
