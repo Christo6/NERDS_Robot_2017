@@ -29,7 +29,7 @@ public:
 	static std::shared_ptr<DriveTrain> drive_train;
 private:
 	frc::SendableChooser<frc::Command*> chooser;
-}
+};
 
 
 #endif //ROBOT_H
