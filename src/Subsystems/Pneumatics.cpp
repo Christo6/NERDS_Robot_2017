@@ -5,7 +5,8 @@ Pneumatics::Pneumatics() : Subsystem("Pneumatics"),
 	hinge_solenoid(std::make_unique<DoubleSolenoid>(SOLENOID_HINGE_FORWARD, SOLENOID_HINGE_REVERSE)),
 	door_solenoid(std::make_unique<Solenoid>(SOLENOID_DOOR))
 {
-
+	CloseHinge();
+	CloseDoor();
 }
 
 void Pneumatics::InitDefaultCommand() {
