@@ -12,6 +12,7 @@
 
 #include "Subsystems/DriveTrain.h"
 #include "OI.h"
+#include "Subsystems/Pneumatics.h"
 
 class Robot : public frc::IterativeRobot{
 public:
@@ -27,6 +28,7 @@ public:
 	//static shared pointers of each subsystem
 	static std::shared_ptr<OI> oi;
 	static std::shared_ptr<DriveTrain> drive_train;
+	static std::shared_ptr<Pneumatics> pneumatics;
 private:
 	frc::SendableChooser<frc::Command*> chooser;
 };

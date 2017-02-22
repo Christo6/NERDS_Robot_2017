@@ -14,6 +14,11 @@ constexpr int DRIVER_LEFT_Y = 1;
 constexpr int DRIVER_RIGHT_X = 4;
 constexpr int DRIVER_RIGHT_Y = 5;
 
+//Pneumatic port IDs
+constexpr int SOLENOID_DOOR = 0;
+constexpr int SOLENOID_HINGE_FORWARD = 1;
+constexpr int SOLENOID_HINGE_REVERSE = 2;
+
 constexpr double DEADZONE = 0.05;
 
 #endif  // ROBOTMAP_H

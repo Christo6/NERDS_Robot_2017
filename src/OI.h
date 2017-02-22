@@ -10,9 +10,9 @@ class OI {
 public:
 	OI();
 	double GetDriverAxis(int);
-	double ApplyDeadzone(double);
 private:
 	std::unique_ptr<Joystick> driver_controller;
+	double ApplyDeadzone(double);
 };
 
 #endif  // OI_H
