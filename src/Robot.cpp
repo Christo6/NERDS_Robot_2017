@@ -2,8 +2,12 @@
 
 //declare shared pointers
 std::shared_ptr<DriveTrain> Robot::drive_train;
+std::shared_ptr<OI> Robot::oi;
 
 void Robot::RobotInit() {
+	Robot::drive_train.reset(new DriveTrain);
+	Robot::oi.reset(new OI);
+
 	//chooser.AddDefault("Default Auto", new ExampleCommand());
 	// chooser.AddObject("My Auto", new MyAutoCommand());
 	frc::SmartDashboard::PutData("Auto Modes", &chooser);

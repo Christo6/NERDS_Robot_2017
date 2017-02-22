@@ -5,6 +5,9 @@
 #include <Commands/Subsystem.h>
 #include <RobotDrive.h>
 
+#include "../RobotMap.h"
+#include "Commands/ArcadeDriveJoysticks.h"
+
 class DriveTrain : public Subsystem {
 public:
 	DriveTrain();

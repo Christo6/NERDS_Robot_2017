@@ -1,6 +1,7 @@
 #include "ArcadeDriveJoysticks.h"
 
 ArcadeDriveJoysticks::ArcadeDriveJoysticks() {
+	Robot::oi.get();
 	Requires(Robot::drive_train.get());
 }
 
@@ -11,7 +12,7 @@ void ArcadeDriveJoysticks::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void ArcadeDriveJoysticks::Execute() {
-
+	Robot::drive_train->ArcadeDrive(Robot::oi->GetDriverAxis(DRIVER_LEFT_Y), Robot::oi->GetDriverAxis(DRIVER_LEFT_X));
 }
 
 // Make this return true when this Command no longer needs to run execute()
@@ -27,5 +28,5 @@ void ArcadeDriveJoysticks::End() {
 // Called when another command which requires one or more of the same
 // subsystems is scheduled to run
 void ArcadeDriveJoysticks::Interrupted() {
-
+	Robot::drive_train->ArcadeDrive(0.0, 0.0);
 }

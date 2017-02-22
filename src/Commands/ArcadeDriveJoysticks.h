@@ -3,6 +3,9 @@
 
 #include <Commands/Command.h>
 
+#include "../Robot.h"
+#include "../RobotMap.h"
+
 class ArcadeDriveJoysticks : public Command {
 public:
 	ArcadeDriveJoysticks();
