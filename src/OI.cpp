@@ -10,7 +10,6 @@ OI::OI() :
 	driver_a(std::make_unique<JoystickButton>(driver_controller.get(), DRIVER_BTN_A)),
 	driver_x(std::make_unique<JoystickButton>(driver_controller.get(), DRIVER_BTN_X)),
 	driver_b(std::make_unique<JoystickButton>(driver_controller.get(), DRIVER_BTN_B))
-
 {
 	// Process operator interface input here.
 	driver_a->WhileHeld(new TurnOnClimber);

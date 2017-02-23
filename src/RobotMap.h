@@ -5,6 +5,12 @@
 constexpr int DRIVE_LEFT = 0;
 constexpr int DRIVE_RIGHT = 1;
 
+//Encoder port IDs
+constexpr int ENCODER_LEFT_A = 0;
+constexpr int ENCODER_LEFT_B = 1;
+constexpr int ENCODER_RIGHT_A = 2;
+constexpr int ENCODER_RIGHT_B = 3;
+
 //Joystick IDs
 constexpr int JOY_DRIVER = 0;
 

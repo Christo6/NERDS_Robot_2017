@@ -2,7 +2,9 @@
 #include "Commands/ArcadeDriveJoysticks.h"
 
 DriveTrain::DriveTrain() : Subsystem("DriveTrain"),
-	drive(std::make_unique<RobotDrive>(DRIVE_LEFT, DRIVE_RIGHT))
+	drive(std::make_unique<RobotDrive>(DRIVE_LEFT, DRIVE_RIGHT)),
+	encoder_left(std::make_unique<Encoder>(ENCODER_LEFT_A, ENCODER_LEFT_B)),
+	encoder_right(std::make_unique<Encoder>(ENCODER_RIGHT_A, ENCODER_RIGHT_B))
 {
 
 }
