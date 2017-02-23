@@ -8,6 +8,11 @@ constexpr int DRIVE_RIGHT = 1;
 //Joystick IDs
 constexpr int JOY_DRIVER = 0;
 
+//Driver Butotn IDs
+constexpr int DRIVER_BTN_A = 1;
+constexpr int DRIVER_BTN_X = 2;
+constexpr int DRIVER_BTN_B = 3;
+
 //Driver joystick axis IDs
 constexpr int DRIVER_LEFT_X = 0;
 constexpr int DRIVER_LEFT_Y = 1;

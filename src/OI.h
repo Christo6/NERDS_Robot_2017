@@ -2,9 +2,8 @@
 #define OI_H
 
 #include <Joystick.h>
+#include <Buttons/JoystickButton.h>
 #include <memory>
-
-#include "RobotMap.h"
 
 class OI {
 public:
@@ -12,6 +11,11 @@ public:
 	double GetDriverAxis(int);
 private:
 	std::unique_ptr<Joystick> driver_controller;
+
+	std::unique_ptr<JoystickButton> driver_a;
+	std::unique_ptr<JoystickButton> driver_x;
+	std::unique_ptr<JoystickButton> driver_b;
+
 	double ApplyDeadzone(double);
 };
 
