@@ -4,11 +4,13 @@
 std::shared_ptr<DriveTrain> Robot::drive_train;
 std::shared_ptr<OI> Robot::oi;
 std::shared_ptr<Pneumatics> Robot::pneumatics;
+std::shared_ptr<Climber> Robot::climber;
 
 void Robot::RobotInit() {
 	Robot::drive_train.reset(new DriveTrain);
 	Robot::oi.reset(new OI);
 	Robot::pneumatics.reset(new Pneumatics);
+	Robot::climber.reset(new Climber);
 
 	//chooser.AddDefault("Default Auto", new ExampleCommand());
 	// chooser.AddObject("My Auto", new MyAutoCommand());

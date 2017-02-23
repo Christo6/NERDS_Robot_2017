@@ -13,6 +13,7 @@
 #include "Subsystems/DriveTrain.h"
 #include "OI.h"
 #include "Subsystems/Pneumatics.h"
+#include "Subsystems/Climber.h"
 
 class Robot : public frc::IterativeRobot{
 public:
@@ -29,6 +30,7 @@ public:
 	static std::shared_ptr<OI> oi;
 	static std::shared_ptr<DriveTrain> drive_train;
 	static std::shared_ptr<Pneumatics> pneumatics;
+	static std::shared_ptr<Climber> climber;
 private:
 	frc::SendableChooser<frc::Command*> chooser;
 };
