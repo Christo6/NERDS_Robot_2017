@@ -1,5 +1,8 @@
 #include "HingeToggle.h"
 
+#include "../Robot.h"
+#include "../RobotMap.h"
+
 HingeToggle::HingeToggle() {
 	Requires(Robot::pneumatics.get());
 }

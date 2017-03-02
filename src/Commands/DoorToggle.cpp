@@ -1,5 +1,8 @@
 #include "DoorToggle.h"
 
+#include "../Robot.h"
+#include "../RobotMap.h"
+
 DoorToggle::DoorToggle() {
 	Requires(Robot::pneumatics.get());
 }

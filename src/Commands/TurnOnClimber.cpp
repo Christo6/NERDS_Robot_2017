@@ -1,5 +1,7 @@
 #include "TurnOnClimber.h"
 
+#include "Robot.h"
+
 TurnOnClimber::TurnOnClimber() {
 	Requires(Robot::climber.get());
 }
