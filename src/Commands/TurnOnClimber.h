@@ -2,7 +2,6 @@
 #define TurnOnClimber_H
 
 #include <Commands/Command.h>
-#include "Robot.h"
 
 class TurnOnClimber : public Command {
 public:

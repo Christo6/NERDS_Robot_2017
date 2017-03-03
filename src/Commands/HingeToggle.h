@@ -3,9 +3,6 @@
 
 #include <Commands/Command.h>
 
-#include "../Robot.h"
-#include "../RobotMap.h"
-
 class HingeToggle : public Command {
 public:
 	HingeToggle();

@@ -1,5 +1,7 @@
 #include "OI.h"
 
+#include <cmath>
+
 #include "RobotMap.h"
 #include "Commands/TurnOnClimber.h"
 #include "Commands/DoorToggle.h"
@@ -22,7 +24,7 @@ double OI::GetDriverAxis(int axis){
 }
 
 double OI::ApplyDeadzone(double value){
-	if (value < DEADZONE){
+	if (std::abs(value) < DEADZONE){
 		return 0.0;
 	}
 	return value;

@@ -7,8 +7,6 @@
 #include <Encoder.h>
 #include <ADXRS450_Gyro.h>
 
-#include "../RobotMap.h"
-
 class DriveTrain : public Subsystem {
 public:
 	DriveTrain();

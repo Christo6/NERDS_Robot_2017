@@ -1,7 +1,9 @@
 #include "ArcadeDriveJoysticks.h"
 
+#include "../Robot.h"
+#include "../RobotMap.h"
+
 ArcadeDriveJoysticks::ArcadeDriveJoysticks() {
-	Robot::oi.get();
 	Requires(Robot::drive_train.get());
 }
 
